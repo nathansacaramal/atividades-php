@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS pet (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(40) NOT NULL,
+    especie VARCHAR(10) NOT NULL,
+    idade INT NOT NULL,
+    peso DECIMAL(6,2) NOT NULL,
+    sexo VARCHAR(10) NOT NULL,
+    nome_tutor VARCHAR(100) NOT NULL,
+    telefone_tutor VARCHAR(20) NOT NULL,
+    email_tutor VARCHAR(150) NOT NULL,
+    vacinado TINYINT(1) NOT NULL DEFAULT 0,
+    criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+);

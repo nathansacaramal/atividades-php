@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS inscricao (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf CHAR(11) NOT NULL,
+    data_nascimento DATE NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    percurso VARCHAR(10) NOT NULL,
+    camiseta VARCHAR(2) NOT NULL,
+    valor DECIMAL(6,2) NOT NULL,
+    criado_em DATETIME DEFAULT CURRENT_TIMESTAMP
+);
